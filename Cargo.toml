@@ -1,0 +1,15 @@
+[package]
+name = "smallquery"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "A small BigQuery emulator on DuckDB"
+repository = "https://github.com/firstpromoter/smallquery"
+
+[dependencies]
+axum = "0.8.9"
+duckdb = { version = "1.20001.0", features = ["bundled"] }
+serde_json = "1.0.154"
+sqlparser = { version = "0.64.0", features = ["visitor"] }
+tokio = { version = "1.54.1", features = ["full"] }
+uuid = { version = "1.29.3", features = ["v4"] }
